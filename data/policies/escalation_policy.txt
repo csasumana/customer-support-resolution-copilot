@@ -1,0 +1,10 @@
+Escalation Policy
+
+Escalate the ticket if any of the following conditions are true:
+
+1. Fraud or abuse is suspected.
+2. Payment disputes exceed 100 USD.
+3. There are repeated complaints from the same customer across multiple recent orders.
+4. The issue involves safety, harassment, or misconduct by delivery staff.
+5. The customer explicitly threatens legal action or regulatory complaint.
+6. The ticket cannot be resolved using standard refund, replacement, or apology workflows.

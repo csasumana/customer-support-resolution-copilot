@@ -1,0 +1,53 @@
+{
+  "total_cases": 3,
+  "results": [
+    {
+      "ticket_id": "TICKET_201",
+      "classification": "delivery_delay",
+      "severity": "medium",
+      "resolution": "partial_refund",
+      "retrieved_policies": [
+        "refund_policy.txt",
+        "delivery_policy.txt"
+      ],
+      "actions": [
+        "assign_queue:delivery_support_team",
+        "set_priority:medium",
+        "initiate_partial_refund",
+        "create_internal_ticket_note"
+      ]
+    },
+    {
+      "ticket_id": "TICKET_202",
+      "classification": "safety_issue",
+      "severity": "critical",
+      "resolution": "escalate_to_specialist",
+      "retrieved_policies": [
+        "delivery_policy.txt",
+        "escalation_policy.txt"
+      ],
+      "actions": [
+        "assign_queue:safety_ops_team",
+        "set_priority:critical",
+        "create_followup_task:specialist_review",
+        "create_internal_ticket_note"
+      ]
+    },
+    {
+      "ticket_id": "TICKET_203",
+      "classification": "payment_issue",
+      "severity": "high",
+      "resolution": "escalate_to_specialist",
+      "retrieved_policies": [
+        "escalation_policy.txt",
+        "refund_policy.txt"
+      ],
+      "actions": [
+        "assign_queue:payments_risk_team",
+        "set_priority:high",
+        "create_followup_task:specialist_review",
+        "create_internal_ticket_note"
+      ]
+    }
+  ]
+}

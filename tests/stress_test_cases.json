@@ -1,0 +1,90 @@
+[
+    {
+      "ticket_id": "STRESS_001",
+      "customer_message": "My order came super late and one of the items I paid for just wasn't there. Pretty frustrating.",
+      "order_id": "ORDER_S001",
+      "order_value": 21.0,
+      "customer_id": "CUST_S001",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 25,
+      "actual_eta_minutes": 95,
+      "expected_classification": "delivery_delay"
+    },
+    {
+      "ticket_id": "STRESS_002",
+      "customer_message": "The driver was acting weird and I felt unsafe during delivery.",
+      "order_id": "ORDER_S002",
+      "order_value": 18.0,
+      "customer_id": "CUST_S002",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 20,
+      "actual_eta_minutes": 30,
+      "expected_classification": "safety_issue"
+    },
+    {
+      "ticket_id": "STRESS_003",
+      "customer_message": "I got billed twice and I’m not okay with that.",
+      "order_id": "ORDER_S003",
+      "order_value": 35.0,
+      "customer_id": "CUST_S003",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 0,
+      "actual_eta_minutes": 0,
+      "expected_classification": "payment_issue"
+    },
+    {
+      "ticket_id": "STRESS_004",
+      "customer_message": "The order says delivered but I literally never got anything.",
+      "order_id": "ORDER_S004",
+      "order_value": 27.0,
+      "customer_id": "CUST_S004",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 30,
+      "actual_eta_minutes": 30,
+      "expected_classification": "general_complaint"
+    },
+    {
+      "ticket_id": "STRESS_005",
+      "customer_message": "This is the second time stuff is missing from my order.",
+      "order_id": "ORDER_S005",
+      "order_value": 17.0,
+      "customer_id": "CUST_S005",
+      "prior_issues_count": 2,
+      "promised_eta_minutes": 25,
+      "actual_eta_minutes": 35,
+      "expected_classification": "missing_item"
+    },
+    {
+      "ticket_id": "STRESS_006",
+      "customer_message": "I asked for paneer but got chicken instead.",
+      "order_id": "ORDER_S006",
+      "order_value": 19.0,
+      "customer_id": "CUST_S006",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 30,
+      "actual_eta_minutes": 40,
+      "expected_classification": "wrong_item"
+    },
+    {
+      "ticket_id": "STRESS_007",
+      "customer_message": "Please just refund me.",
+      "order_id": "ORDER_S007",
+      "order_value": 14.0,
+      "customer_id": "CUST_S007",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 20,
+      "actual_eta_minutes": 20,
+      "expected_classification": "general_complaint"
+    },
+    {
+      "ticket_id": "STRESS_008",
+      "customer_message": "Looks like someone charged my card even though the order didn’t go through.",
+      "order_id": "ORDER_S008",
+      "order_value": 110.0,
+      "customer_id": "CUST_S008",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 0,
+      "actual_eta_minutes": 0,
+      "expected_classification": "payment_issue"
+    }
+  ]

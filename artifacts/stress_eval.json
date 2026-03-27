@@ -1,0 +1,94 @@
+{
+  "total_cases": 8,
+  "stress_classification_accuracy": 0.875,
+  "results": [
+    {
+      "ticket_id": "STRESS_001",
+      "expected_classification": "delivery_delay",
+      "actual_classification": "delivery_delay",
+      "classification_correct": true,
+      "resolution": "partial_refund",
+      "retrieved_policies": [
+        "delivery_policy.txt",
+        "refund_policy.txt"
+      ]
+    },
+    {
+      "ticket_id": "STRESS_002",
+      "expected_classification": "safety_issue",
+      "actual_classification": "safety_issue",
+      "classification_correct": true,
+      "resolution": "escalate_to_specialist",
+      "retrieved_policies": [
+        "delivery_policy.txt",
+        "escalation_policy.txt"
+      ]
+    },
+    {
+      "ticket_id": "STRESS_003",
+      "expected_classification": "payment_issue",
+      "actual_classification": "payment_issue",
+      "classification_correct": true,
+      "resolution": "ask_for_more_info",
+      "retrieved_policies": [
+        "escalation_policy.txt",
+        "delivery_policy.txt"
+      ]
+    },
+    {
+      "ticket_id": "STRESS_004",
+      "expected_classification": "general_complaint",
+      "actual_classification": "delivery_delay",
+      "classification_correct": false,
+      "resolution": "apology_and_close",
+      "retrieved_policies": [
+        "delivery_policy.txt",
+        "refund_policy.txt"
+      ]
+    },
+    {
+      "ticket_id": "STRESS_005",
+      "expected_classification": "missing_item",
+      "actual_classification": "missing_item",
+      "classification_correct": true,
+      "resolution": "partial_refund",
+      "retrieved_policies": [
+        "delivery_policy.txt",
+        "refund_policy.txt"
+      ]
+    },
+    {
+      "ticket_id": "STRESS_006",
+      "expected_classification": "wrong_item",
+      "actual_classification": "wrong_item",
+      "classification_correct": true,
+      "resolution": "replacement",
+      "retrieved_policies": [
+        "delivery_policy.txt",
+        "escalation_policy.txt"
+      ]
+    },
+    {
+      "ticket_id": "STRESS_007",
+      "expected_classification": "general_complaint",
+      "actual_classification": "general_complaint",
+      "classification_correct": true,
+      "resolution": "apology_and_close",
+      "retrieved_policies": [
+        "refund_policy.txt",
+        "escalation_policy.txt"
+      ]
+    },
+    {
+      "ticket_id": "STRESS_008",
+      "expected_classification": "payment_issue",
+      "actual_classification": "payment_issue",
+      "classification_correct": true,
+      "resolution": "escalate_to_specialist",
+      "retrieved_policies": [
+        "escalation_policy.txt",
+        "delivery_policy.txt"
+      ]
+    }
+  ]
+}

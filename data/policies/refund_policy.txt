@@ -1,0 +1,18 @@
+Refund Policy
+
+1. Customers are eligible for a full refund if:
+- The order was not delivered.
+- Payment was charged but the order failed.
+- The wrong item was delivered and replacement is not feasible.
+
+2. Customers are eligible for a partial refund if:
+- One or more items are missing from the order.
+- Delivered items were damaged but some usable items remain.
+
+3. Refund requests must be made within 30 days of the original order date.
+
+4. Refunds should be processed within 5 business days after approval.
+
+5. If the issue can be resolved through replacement faster than refund, replacement may be preferred for customer satisfaction.
+
+6. High-value refund disputes above 100 USD must be escalated to the payments or risk team.

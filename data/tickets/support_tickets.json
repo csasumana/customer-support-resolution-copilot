@@ -1,0 +1,112 @@
+[
+    {
+      "ticket_id": "TICKET_301",
+      "customer_message": "My order was delayed by 95 minutes and the food arrived cold. This is unacceptable.",
+      "order_id": "ORDER_301",
+      "order_value": 22.5,
+      "customer_id": "CUST_301",
+      "prior_issues_count": 1,
+      "promised_eta_minutes": 30,
+      "actual_eta_minutes": 125,
+      "tags": []
+    },
+    {
+      "ticket_id": "TICKET_302",
+      "customer_message": "One item was missing from my order. I paid for it but never received it.",
+      "order_id": "ORDER_302",
+      "order_value": 14.0,
+      "customer_id": "CUST_302",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 25,
+      "actual_eta_minutes": 35,
+      "tags": []
+    },
+    {
+      "ticket_id": "TICKET_303",
+      "customer_message": "The restaurant sent the wrong item. I ordered veg but received chicken.",
+      "order_id": "ORDER_303",
+      "order_value": 18.0,
+      "customer_id": "CUST_303",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 35,
+      "actual_eta_minutes": 40,
+      "tags": []
+    },
+    {
+      "ticket_id": "TICKET_304",
+      "customer_message": "I was charged twice for the same order. This is a payment issue and I need help.",
+      "order_id": "ORDER_304",
+      "order_value": 48.0,
+      "customer_id": "CUST_304",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 20,
+      "actual_eta_minutes": 25,
+      "tags": []
+    },
+    {
+      "ticket_id": "TICKET_305",
+      "customer_message": "The delivery person was threatening and behaved in an unsafe way. I want this escalated.",
+      "order_id": "ORDER_305",
+      "order_value": 30.0,
+      "customer_id": "CUST_305",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 25,
+      "actual_eta_minutes": 30,
+      "tags": []
+    },
+    {
+      "ticket_id": "TICKET_306",
+      "customer_message": "I never received my order but the app says it was delivered.",
+      "order_id": "ORDER_306",
+      "order_value": 26.0,
+      "customer_id": "CUST_306",
+      "prior_issues_count": 1,
+      "promised_eta_minutes": 30,
+      "actual_eta_minutes": 30,
+      "tags": []
+    },
+    {
+      "ticket_id": "TICKET_307",
+      "customer_message": "This is the third time my order has had issues. Today one item was missing again.",
+      "order_id": "ORDER_307",
+      "order_value": 16.0,
+      "customer_id": "CUST_307",
+      "prior_issues_count": 3,
+      "promised_eta_minutes": 25,
+      "actual_eta_minutes": 35,
+      "tags": []
+    },
+    {
+      "ticket_id": "TICKET_308",
+      "customer_message": "My card was charged for an order that failed to place. This looks like an unauthorized charge.",
+      "order_id": "ORDER_308",
+      "order_value": 120.0,
+      "customer_id": "CUST_308",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 0,
+      "actual_eta_minutes": 0,
+      "tags": []
+    },
+    {
+      "ticket_id": "TICKET_309",
+      "customer_message": "My order was 20 minutes late but everything else was fine.",
+      "order_id": "ORDER_309",
+      "order_value": 12.0,
+      "customer_id": "CUST_309",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 30,
+      "actual_eta_minutes": 50,
+      "tags": []
+    },
+    {
+      "ticket_id": "TICKET_310",
+      "customer_message": "I want a refund for my order.",
+      "order_id": "ORDER_310",
+      "order_value": 19.0,
+      "customer_id": "CUST_310",
+      "prior_issues_count": 0,
+      "promised_eta_minutes": 25,
+      "actual_eta_minutes": 25,
+      "tags": []
+    }
+  ]

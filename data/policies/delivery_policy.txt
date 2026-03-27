@@ -1,0 +1,13 @@
+Delivery Policy
+
+1. Orders delayed by more than 60 minutes from the promised delivery time may qualify for compensation.
+
+2. If an order is marked delivered but the customer reports it as not received, verify delivery proof before refund.
+
+3. Missing items should trigger either:
+- Replacement, if available and operationally feasible
+- Partial refund, if replacement is not possible
+
+4. Repeated delivery issues for the same customer within a short period should be reviewed by delivery operations.
+
+5. Safety-related delivery incidents involving delivery partners must be escalated immediately.

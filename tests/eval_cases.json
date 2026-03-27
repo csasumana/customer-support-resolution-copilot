@@ -1,0 +1,52 @@
+[
+    {
+      "ticket_id": "TICKET_301",
+      "expected_classification": "delivery_delay",
+      "expected_resolution": "partial_refund"
+    },
+    {
+      "ticket_id": "TICKET_302",
+      "expected_classification": "missing_item",
+      "expected_resolution": "partial_refund"
+    },
+    {
+      "ticket_id": "TICKET_303",
+      "expected_classification": "wrong_item",
+      "expected_resolution": "replacement"
+    },
+    {
+      "ticket_id": "TICKET_304",
+      "expected_classification": "payment_issue",
+      "expected_resolution": "ask_for_more_info"
+    },
+    {
+      "ticket_id": "TICKET_305",
+      "expected_classification": "safety_issue",
+      "expected_resolution": "escalate_to_specialist"
+    },
+    {
+      "ticket_id": "TICKET_306",
+      "expected_classification": "general_complaint",
+      "expected_resolution": "apology_and_close"
+    },
+    {
+      "ticket_id": "TICKET_307",
+      "expected_classification": "missing_item",
+      "expected_resolution": "partial_refund"
+    },
+    {
+      "ticket_id": "TICKET_308",
+      "expected_classification": "fraud_risk",
+      "expected_resolution": "escalate_to_specialist"
+    },
+    {
+      "ticket_id": "TICKET_309",
+      "expected_classification": "delivery_delay",
+      "expected_resolution": "apology_and_close"
+    },
+    {
+      "ticket_id": "TICKET_310",
+      "expected_classification": "refund_request",
+      "expected_resolution": "ask_for_more_info"
+    }
+  ]
