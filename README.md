@@ -197,3 +197,169 @@ customer-support-resolution-copilot/
 ├── test_stress_eval.py
 ├── requirements.txt
 └── README.md
+
+text```
+---
+Example API Output
+
+Example response from the support resolution API:
+
+{
+  "ticket_id": "TICKET_API_001",
+  "classification": "safety_issue",
+  "severity": "critical",
+  "retrieved_policies": [
+    "escalation_policy.txt",
+    "delivery_policy.txt"
+  ],
+  "resolution": "escalate_to_specialist",
+  "customer_response": "We’re sorry for the inconvenience. Your issue requires specialist review, and our team has escalated it for priority handling. We’ll follow up with you shortly.",
+  "actions": [
+    "assign_queue:safety_ops_team",
+    "set_priority:critical",
+    "create_followup_task:specialist_review",
+    "create_internal_ticket_note"
+  ],
+  "trace": [
+    {
+      "step": "classification",
+      "decision": "safety_issue | severity=critical",
+      "reason": "Critical safety language detected"
+    },
+    {
+      "step": "urgent_routing",
+      "decision": "critical_ticket_routed_to_urgent_path",
+      "reason": "Severity is critical, forcing urgent escalation path before planning"
+    },
+    {
+      "step": "retrieval",
+      "decision": "retrieved_top_2_policies",
+      "reason": "Retrieved ['escalation_policy.txt', 'delivery_policy.txt']"
+    },
+    {
+      "step": "resolution_planning",
+      "decision": "escalate_to_specialist",
+      "reason": "Fraud or safety issues require immediate escalation per policy"
+    }
+  ]
+}
+Evaluation
+
+This project includes two evaluation layers:
+
+1) Regression Evaluation
+
+A small deterministic suite that verifies:
+
+workflow correctness
+routing behavior
+sensible resolution selection
+trace generation
+policy retrieval behavior
+
+Saved artifact:
+
+artifacts/regression_eval.json
+2) Stress Evaluation
+
+A paraphrase-oriented robustness suite that checks whether the classifier still behaves sensibly when the same intent is phrased differently.
+
+Saved artifact:
+
+artifacts/stress_eval.json
+Current Stress-Test Result
+Stress classification accuracy: 87.5% (7/8)
+
+This was intentionally not over-optimized to 100% to avoid overfitting to a tiny synthetic stress set.
+
+Design Decisions / What I Learned
+1) Issue vs Remedy Separation
+
+A key lesson from this project was that customer messages often contain both:
+
+the operational issue
+the requested outcome
+
+Treating “refund request” as a primary class caused misrouting.
+
+The final system separates:
+
+Issue diagnosis
+Resolution planning
+
+This improved routing quality and made the workflow more realistic.
+
+2) Hybrid > Pure Rules or Pure LLM
+
+A pure keyword classifier was too brittle.
+A pure semantic classifier was too aggressive.
+
+The final design uses:
+
+deterministic overrides for critical/high-risk flows
+semantic matching for non-critical operational issues
+
+This was the best balance of:
+
+reliability
+robustness
+explainability
+testability
+3) Traceability Matters
+
+The most valuable production-style feature in this project is the action trace.
+
+It makes the system:
+
+debuggable
+auditable
+interview-friendly
+easier to improve systematically
+How to Run
+1) Create and activate virtual environment
+python -m venv .venv
+
+Windows PowerShell
+
+.venv\Scripts\Activate.ps1
+2) Install dependencies
+pip install -r requirements.txt
+3) Run FastAPI server
+uvicorn app.api.main:app --reload
+
+Open:
+
+API docs: http://127.0.0.1:8000/docs
+Test Scripts
+Run core regression flow
+python test_day3_langgraph.py
+Run stress evaluation
+python test_stress_eval.py
+Run batch evaluation
+python test_batch_eval.py
+
+
+Current Limitations
+
+This project is intentionally a strong portfolio-grade prototype, not a full production deployment.
+
+Current limitations:
+
+Local JSON/text policy store instead of DB-backed policy management
+Small synthetic evaluation suite
+No human-in-the-loop approval workflow
+No historical customer memory / CRM integration
+No confidence calibration endpoint
+No real ticketing backend integration (e.g. Zendesk / Freshdesk)
+Future Improvements
+
+Potential v2 upgrades:
+
+Expand policy corpus with more realistic support documents
+Add confidence score / routing mode to API responses
+Introduce reranking for policy retrieval
+Add human approval step before high-impact actions
+Store ticket history in PostgreSQL
+Add real support platform integration
+Build a lightweight internal operations dashboard
+Add richer evaluation set with real anonymized support-style data
